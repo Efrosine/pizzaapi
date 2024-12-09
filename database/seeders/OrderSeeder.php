@@ -14,8 +14,7 @@ class OrderSeeder extends Seeder
     {
         \DB::table('orders')->insert([
             [
-                'customer_id' => 2, // ID dari customer 'Jane Smith'
-                'admin_id' => 1, // ID dari admin 'John Doe'
+                'user_id' => 2, // ID dari customer 'Jane Smith'
                 'order_date' => now(),
                 'status' => 'pending',
                 'total_price' => 85000,
@@ -23,8 +22,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 3, // ID dari customer 'Michael Johnson'
-                'admin_id' => 4, // ID dari admin 'Emily Davis'
+                'user_id' => 3, // ID dari customer 'Michael Johnson'
                 'order_date' => now(),
                 'status' => 'prosessed',
                 'total_price' => 120000,
@@ -32,8 +30,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 5, // ID dari customer 'Chris Brown'
-                'admin_id' => 6, // ID dari admin 'Jessica Williams'
+                'user_id' => 5, // ID dari customer 'Chris Brown'
                 'order_date' => now(),
                 'status' => 'completed',
                 'total_price' => 98000,
@@ -41,8 +38,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 7, // ID dari customer 'Daniel Miller'
-                'admin_id' => 8, // ID dari admin 'David Moore'
+                'user_id' => 7, // ID dari customer 'Daniel Miller'
                 'order_date' => now(),
                 'status' => 'cancelled',
                 'total_price' => 0,
@@ -50,8 +46,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 9, // ID dari customer 'Olivia Anderson'
-                'admin_id' => 10, // ID dari admin 'Olivia Anderson'
+                'user_id' => 9, // ID dari customer 'Olivia Anderson'
                 'order_date' => now(),
                 'status' => 'pending',
                 'total_price' => 65000,
@@ -59,8 +54,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 2, // ID dari customer 'Jane Smith'
-                'admin_id' => 1, // ID dari admin 'John Doe'
+                'user_id' => 2, // ID dari customer 'Jane Smith'
                 'order_date' => now(),
                 'status' => 'completed',
                 'total_price' => 105000,
@@ -68,8 +62,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 4, // ID dari customer 'Emily Davis'
-                'admin_id' => 2, // ID dari admin 'Jane Smith'
+                'user_id' => 4, // ID dari customer 'Emily Davis'
                 'order_date' => now(),
                 'status' => 'prosessed',
                 'total_price' => 115000,
@@ -77,8 +70,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 6, // ID dari customer 'Jessica Williams'
-                'admin_id' => 3, // ID dari admin 'Michael Johnson'
+                'user_id' => 6, // ID dari customer 'Jessica Williams'
                 'order_date' => now(),
                 'status' => 'pending',
                 'total_price' => 70000,
@@ -86,8 +78,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 8, // ID dari customer 'Sophia Wilson'
-                'admin_id' => 5, // ID dari admin 'Chris Brown'
+                'user_id' => 8, // ID dari customer 'Sophia Wilson'
                 'order_date' => now(),
                 'status' => 'completed',
                 'total_price' => 150000,
@@ -95,8 +86,7 @@ class OrderSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'customer_id' => 9, // ID dari customer 'Olivia Anderson'
-                'admin_id' => 4, // ID dari admin 'Emily Davis'
+                'user_id' => 9, // ID dari customer 'Olivia Anderson'
                 'order_date' => now(),
                 'status' => 'prosessed',
                 'total_price' => 90000,

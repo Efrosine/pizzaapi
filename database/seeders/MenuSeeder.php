@@ -16,7 +16,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Margherita Pizza',
                 'price' => 80000,
-                'category' => 'pizza',
+                'category' => 0,
                 'description' => 'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.',
                 'image_url' => 'https://example.com/images/margherita.jpg',
                 'created_at' => now(),
@@ -25,7 +25,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Pepperoni Pizza',
                 'price' => 95000,
-                'category' => 'pizza',
+                'category' => 0,
                 'description' => 'Pizza topped with spicy pepperoni slices and melted mozzarella.',
                 'image_url' => 'https://example.com/images/pepperoni.jpg',
                 'created_at' => now(),
@@ -34,7 +34,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Veggie Pizza',
                 'price' => 85000,
-                'category' => 'pizza',
+                'category' => 0,
                 'description' => 'Loaded with fresh vegetables, including bell peppers, onions, and olives.',
                 'image_url' => 'https://example.com/images/veggie.jpg',
                 'created_at' => now(),
@@ -43,7 +43,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Hawaiian Pizza',
                 'price' => 90000,
-                'category' => 'pizza',
+                'category' => 0,
                 'description' => 'Sweet and savory pizza topped with pineapple and ham.',
                 'image_url' => 'https://example.com/images/hawaiian.jpg',
                 'created_at' => now(),
@@ -52,7 +52,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Coca Cola',
                 'price' => 15000,
-                'category' => 'drink',
+                'category' => 1,
                 'description' => 'Classic refreshing soft drink.',
                 'image_url' => 'https://example.com/images/cocacola.jpg',
                 'created_at' => now(),
@@ -61,7 +61,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Orange Juice',
                 'price' => 20000,
-                'category' => 'drink',
+                'category' => 1,
                 'description' => 'Freshly squeezed orange juice.',
                 'image_url' => 'https://example.com/images/orangejuice.jpg',
                 'created_at' => now(),
@@ -88,7 +88,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'Mango Smoothie',
                 'price' => 25000,
-                'category' => 'drink',
+                'category' => 1,
                 'description' => 'Creamy smoothie made with fresh mangoes.',
                 'image_url' => 'https://example.com/images/mangosmoothie.jpg',
                 'created_at' => now(),
@@ -97,7 +97,7 @@ class MenuSeeder extends Seeder
             [
                 'name' => 'BBQ Pizza',
                 'price' => 100000,
-                'category' => 'pizza',
+                'category' => 0,
                 'description' => 'Pizza with BBQ sauce, grilled chicken, and onions.',
                 'image_url' => 'https://example.com/images/bbqpizza.jpg',
                 'created_at' => now(),

@@ -14,8 +14,7 @@ class OrderRequest extends FormRequest
     public function rules()
     {
         return [
-            'customer_id' => 'required|exists:users,id',
-            'admin_id' => 'required|exists:users,id',
+            'user_id' => 'required|exists:users,id',
             'order_date' => 'required|date',
             'status' => 'required|in:pending,prosessed,completed,cancelled',
             'total_price' => 'required|integer|min:1',
@@ -25,10 +24,8 @@ class OrderRequest extends FormRequest
     public function messages()
     {
         return [
-            'customer_id.required' => 'ID pelanggan wajib diisi.',
-            'customer_id.exists' => 'Pelanggan tidak ditemukan.',
-            'admin_id.required' => 'ID admin wajib diisi.',
-            'admin_id.exists' => 'Admin tidak ditemukan.',
+            'user_id.required' => 'ID pelanggan wajib diisi.',
+            'user_id.exists' => 'Pelanggan tidak ditemukan.',
             'order_date.required' => 'Tanggal pesanan wajib diisi.',
             'order_date.date' => 'Tanggal pesanan tidak valid.',
             'status.required' => 'Status wajib dipilih.',
