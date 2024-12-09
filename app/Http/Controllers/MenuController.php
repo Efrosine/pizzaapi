@@ -13,7 +13,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $data = Menu::all();
+        $data = Menu::with('category')->get();
 
         if ($data->isEmpty()) {
             return response()->json([
@@ -55,6 +55,7 @@ class MenuController extends Controller
      */
     public function show(Menu $menu)
     {
+        $menu->load('category');
         return response()->json([
             'message' => 'Berhasil menampilkan menu',
             'data' => $menu

@@ -16,7 +16,7 @@ class UserRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,' . $this->route('user'),
-            'password' => 'required|string|min:8|confirmed',
+            'password' => 'required|string',
             'role' => 'required|in:admin,customer',
         ];
     }
@@ -32,8 +32,7 @@ class UserRequest extends FormRequest
             'email.unique' => 'Email sudah terdaftar.',
             'password.required' => 'Password wajib diisi.',
             'password.string' => 'Password harus berupa teks.',
-            'password.min' => 'Password minimal 8 karakter.',
-            'password.confirmed' => 'Password konfirmasi tidak cocok.',
+
             'role.required' => 'Role wajib diisi.',
             'role.in' => 'Role harus admin atau customer.',
         ];

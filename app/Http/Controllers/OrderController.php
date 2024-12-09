@@ -17,7 +17,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $data = Order::all();
+        $data = Order::with('details')->with('user')->get();
         if ($data->isEmpty()) {
             return response()->json([
                 'message' => 'Tidak ada order yang ditemukan',

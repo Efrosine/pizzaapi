@@ -16,9 +16,9 @@ class MenuRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'price' => 'required|integer|min:1',
-            'category' => 'required|in:pizza,drink,other',
+            'category_id' => 'required|exists:categories,id',
             'description' => 'required|string|max:500',
-            'image_url' => 'required|url',
+            'image_url' => 'required|string|',
         ];
     }
 
@@ -31,13 +31,13 @@ class MenuRequest extends FormRequest
             'price.required' => 'Harga wajib diisi.',
             'price.integer' => 'Harga harus berupa angka.',
             'price.min' => 'Harga minimal 1.',
-            'category.required' => 'Kategori wajib dipilih.',
-            'category.in' => 'Kategori harus salah satu dari: pizza, drink, other.',
+            'category.required' => 'Kategori wajib diisi.',
+            'category.in' => 'Kategori harus pizza, drink, atau other.',
             'description.required' => 'Deskripsi wajib diisi.',
             'description.string' => 'Deskripsi harus berupa teks.',
             'description.max' => 'Deskripsi tidak boleh lebih dari 500 karakter.',
             'image_url.required' => 'URL gambar wajib diisi.',
-            'image_url.url' => 'URL gambar tidak valid.',
+            'image_url.string' => 'URL gambar harus berupa teks.',
         ];
     }
 }

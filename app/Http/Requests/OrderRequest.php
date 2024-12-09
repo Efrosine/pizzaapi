@@ -13,6 +13,11 @@ class OrderRequest extends FormRequest
 
     public function rules()
     {
+        if ($this->isMethod('PUT')) {
+            return [
+                'status' => 'required|in:pending,prosessed,completed,cancelled',
+            ];
+        }
         return [
             'user_id' => 'required|exists:users,id',
             'order_date' => 'required|date',
